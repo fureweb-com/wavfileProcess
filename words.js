@@ -23,7 +23,7 @@ const words = {
 const makeWordById = (elem, index) => index === 2 ? `${elem}_${words[elem]}` : elem
 const makeNewFilePath = (filePath) => {
   if (!String(filePath).startsWith('tasks')) throw new Error('반드시 tasks로 시작하는 filepath를 인자로 넘겨야합니다.')
-  return filePath.split('/').map(makeWordById).join('_')
+  return filePath.split('/').map(makeWordById).filter((_, i) => i > 0).join('_')
 }
 
 module.exports = {
