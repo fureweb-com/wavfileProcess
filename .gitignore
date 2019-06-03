@@ -1,0 +1,8 @@
+# source directory
+tasks
+
+# output directory
+output
+
+# log file
+*.log
