@@ -7,10 +7,9 @@ const filePathList = require('./filePathList.js')
 const successLogFile = fs.createWriteStream('./success.log', { flags: 'w'})
 const errorLogFile = fs.createWriteStream('./error.log', { flags: 'w' })
 
-const getOutputFile = filePath => 'output/' + makeNewFilePath(filePath).split('_').filter((_, i) => i > 0).join('_')
+const getOutputFile = filePath => 'output/' + makeNewFilePath(filePath)
 
 filePathList.forEach(filePath => {
-  
   const dclFilePath = `${filePath.split('.')[0]}.dcl`
   const sdclFilePath = `${filePath.split('.')[0]}.sdcl`
 
