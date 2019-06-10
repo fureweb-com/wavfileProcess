@@ -34,3 +34,4 @@ filePathList.forEach(filePath => {
   exec(`cp ${dclFilePaths[0]} ${dclFilePaths[1]}`, printResult)
   exec(`cp ${sdclFilePaths[0]} ${sdclFilePaths[1]}`, printResult)
 })
+// test
