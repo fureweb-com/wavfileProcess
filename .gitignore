@@ -6,3 +6,6 @@ output
 
 # log file
 *.log
+
+# node modules
+node_modules
